@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <style>
+        /* div {
+            width: 500px;
+            height: 200px;
+            background-color: pink;
+        } */
+    </style>
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <!-- <div></div> -->
+    <button>点击</button>
+    <input type="text">
+    <script src="echarts.min.js"></script>
+    <script>
+        var button = document.querySelector("button");
+        var input = document.querySelector("input");
+        button.onclick = function () {
+            input.value = "change";
+            console.log(input.value);
+        }
+        // var myChart = echarts.init(document.querySelector("div"));
+        // console.log(myChart, document.querySelector("div"));
+        // var option = {
+        //     title: {
+        //         text: '折线图堆叠'
+        //     },
+        //     tooltip: {
+        //         trigger: 'axis'
+        //     },
+        //     grid: {
+        //         left: '3%',
+        //         right: '4%',
+        //         bottom: '3%',
+        //         containLabel: true
+        //     },
+        //     xAxis: {
+        //         type: 'category',
+        //         boundaryGap: false,
+        //         data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日']
+        //     },
+        //     yAxis: {
+        //         show: false,
+        //         type: 'value',
+        //         axisLabel: {
+        //             show: false
+        //         },
+        //         splitLine: {
+        //             show: false
+        //         }
+        //     },
+        //     series: [{
+        //             itemStyle: {
+        //                 normal: {
+        //                     color: "#ffb74d",
+
+        //                 }
+        //             },
+        //             lineStyle: {
+        //                 normal: {
+        //                     width: 3,
+        //                     color: "#ffb74d"
+        //                 }
+        //             },
+        //             symbol: "circle",
+        //             symbolSize: '8',
+        //             animation: false,
+        //             smooth: true,
+        //             type: 'line',
+        //             data: [31, 32, 31, 27, 29, 32, 29, 29]
+        //         },
+        //         {
+
+        //             itemStyle: {
+        //                 normal: {
+        //                     color: "#4fc3f7",
+
+        //                 }
+        //             },
+        //             lineStyle: {
+        //                 normal: {
+        //                     width: 3,
+        //                     color: "#4fc3f7"
+        //                 }
+        //             },
+        //             symbol: "circle",
+        //             symbolSize: '8',
+        //             animation: false,
+        //             smooth: true,
+        //             type: 'line',
+        //             data: [15, 15, 18, 16, 16, 19, 12, 11],
+        //             markPoint: {
+        //                 data: [{
+        //                     value: -2,
+        //                     xAxis: 2,
+        //                     yAxis: 15
+        //                 }],
+        //                 symbol: "circle",
+        //                 itemStyle: {
+        //                     normal: {
+        //                         label: {
+        //                             show: true,
+        //                             color: "red",
+        //                             fontSize: 15
+        //                         }
+        //                     }
+        //                 },
+        //                 symbolSize: [20, 20],
+        //             }
+        //         }
+        //     ]
+        // };
+        // myChart.setOption(option);
+        // var temp = 10;
+        // var data = new Array;
+        // for (let i = 0; i < 3; i++) {
+        //     let d = {};
+        //     d.value = 15 + "°";
+        //     d.xAxis = i;
+        //     d.yAxis = temp - 1;
+        //     data[data.length] = d;
+        // }
+        // for (let i = 0; i < 3; i++) {
+        //     console.log(data[i]);
+        // }
+        // var temp = {
+        //     name: "xxx",
+        //     id: 15
+        // }
+        // for (i in temp) {
+        //     console.log(i);
+        // }
+        // var rex = /\w{1,}/;
+        // console.log(rex.test("上"));
+    </script>
+</body>
+
+</html>
